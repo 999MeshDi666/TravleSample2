@@ -1,0 +1,57 @@
+$w: #fff;
+$b: #000;
+$Roboto: "Roboto", sans-serif;
+$Inter: 'Inter', sans-serif;
+
+
+.header{
+
+    border-bottom: 1px #E7E7F2 solid;
+    padding: 36px 0 26px 0;
+
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    color: $w;
+}
+
+.header_nav_list{
+    display: flex;
+    list-style: none;
+    li{
+        margin-right: 60px;
+        a{
+            color: $w;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 18px;
+            transition: 0.4s;
+           
+            
+            .search_icon{
+                width: 24px;
+                height: 24px;
+                transition: 0.5s;
+            }
+            .search_icon:hover{
+                width: 26px;
+                height: 26px;
+            }
+        }
+        a:hover{
+            text-decoration: overline;
+            
+        }
+        a:active{
+            color: rgb(236, 236, 236);
+        }
+    }
+}
+
+.header_logo{
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: $Inter;
+}
