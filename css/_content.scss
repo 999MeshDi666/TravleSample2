@@ -34,6 +34,9 @@ $b: #000;
 
 .sec_next_background_block{
     display: flex;
+    position: absolute;
+    right: 0px;
+    top: 155px
 }
 .next_bg_text_block{
     // background-color: $w;
@@ -41,41 +44,47 @@ $b: #000;
     height: 400px;
     padding: 46px 0 46px 37px;
     box-sizing: border-box;
-    // background-color:  $w;
+    background-color:  rgba(255, 255, 255, 0.5);
     border-radius: 20px 0px 0px 20px;
     position: relative;
+    
 
-    
-    
   
     sub{
-        color: rgba(255, 255, 255, 0.6);
+        color: $w;
         font-weight: bold;
+        font-size: 20px;
         
         
        
     }
     h2{
+       
         font-size: 36px;
         line-height: 48px;
         margin: 47px 0;
-       
+     
        
     }
     p{
         font-size: 60px;
         color: rgba(255, 255, 255, 0.6);
+        transition: 0.6s;
+        cursor: pointer;
        
+    }
+    p:hover{
+        font-size: 65px;
     }
 
 }
 
-.next_bg_text_block::after{
+.next_bg_text_block::before{
     content: "";
     width: 293px;
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.9);
-    filter: blur(5px);
+    // background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
     border-radius:  20px 0px 0px 20px;
     display: block;
     position: absolute;

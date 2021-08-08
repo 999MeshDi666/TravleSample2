@@ -1,0 +1,96 @@
+$w: #fff;
+$b: #000;
+$Roboto: "Roboto", sans-serif;
+$Inter: 'Inter', sans-serif;
+
+
+footer{
+    background-color: #555454;
+    border-radius: 20px 20px 0 0;
+    padding: 35px 48px;
+}
+.footer_content_block{
+  
+    color: $w;
+
+    p{
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+}
+
+.footer_form{
+    display: flex;
+}
+.select_places{
+    border-radius: 10px 0px 0px 10px;
+}
+.select_guestes{
+    border-radius: 0px 10px 10px 0px;
+
+}
+.input_form{
+    display: flex;
+    align-items: center ;
+    border: 1px solid #dcdcdff1;
+    padding: 13px 16px;
+   
+    div{
+        margin-left:15px;
+        p{
+            margin-bottom: 5px;
+            color: #E7E7F2;
+            font-size: 12px;
+        }
+        .inputs{
+            background-color: rgba(255, 255, 255, 0);
+            color: $w;
+            border: 0px;
+            option[value="1"] {
+                color: $b;
+                padding: 5px;
+            }
+            option[value="2"] {
+                color: $b;
+                padding: 5px;
+            }
+            option[value="3"] {
+                color: $b;
+                padding: 5px;
+            }
+            option[value="4"] {
+                color: $b;
+                padding: 5px;
+            }
+        }
+       
+        .inputs:focus{
+           outline: none;
+        }
+        .date_input[type=date]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+        
+    }
+}
+.form_icons{
+    width: 28px;
+    height: 28px;
+    
+}
+.search_btn{
+    margin-left: 30px;
+    padding: 26px 88px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    border: 0;
+    color: $w;
+    background-color: #91CB82;
+    transition: 0.6s;
+}
+.search_btn:hover{
+    background-color: #72a066;
+
+}
